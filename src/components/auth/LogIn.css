@@ -1,0 +1,124 @@
+.wrapper{
+    position:relative;
+    width: 600px;
+    height: 600px;
+    background:transparent;
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: height 1.5s ease ;
+    overflow: hidden;
+    color: black;
+}
+
+    .wrapper.active{
+        height: 750px;
+    }
+    .wrapper .form-box{
+        width:100%;
+        padding: 40px;
+    }
+    .wrapper .form-box.logIn{
+        transition: translate 1.5s ease;
+        translate: 0;
+    }
+    .wrapper.active .form-box.logIn{
+        transition: none;
+        translate: -600px;
+    }
+    .wrapper.active .form-box.register{
+        transition: translate 1.5s ease;
+        translate: 0;
+    }
+    .wrapper .form-box.register{
+        position: absolute;
+        transition: none;
+        translate: 600px;
+    }
+    form h1{
+        font-size: 56px;
+        text-align:center;
+    }
+    form .input-box{
+        position: relative;
+        width: 100%;
+        height: 70px;
+        margin: 50px 0;
+    }
+    
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background:transparent;
+        outline:none;
+        border:3px solid #2c2c2c1a;
+        border-radius: 40px;
+        font-size: 20px;
+        padding: 20px 45px 20px 20px;
+    }
+    
+    .input-box input::placeholder{
+        color: #0000006a;
+    }
+    
+    .input-box .icon{
+        position:absolute;
+        right: 20px;
+        top:50%;
+        translate: 0 -50%;
+        font-size: 25px;
+        
+    }
+    
+    form .remember-forgot{
+        display:flex;
+        justify-content: space-between;
+        font-size:20px ;
+        margin:-17px 0 35px 0 ;
+    }
+    
+    .remember-forgot label input{
+        accent-color:#fff;
+        margin-right: 4px;
+    }
+    
+    .remember-forgot a{
+        color: #000000;
+        text-decoration: none;
+    }
+    
+    .remember-forgot a:hover{
+        text-decoration: underline;
+}
+
+form button{
+    width: 100%;
+    height: 65px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor:pointer;
+    color: #333;
+    font-weight: 700;
+    border-radius: 40px;
+    font-size: 25px;
+}
+
+form .register-link {
+    font-size: 20px;
+    text-align: center;
+    margin: 30px 0 25px;
+}
+
+.register-link p a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
