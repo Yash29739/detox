@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/detox/static/css/main.e4e24144.css",
+    "main.js": "/detox/static/js/main.55346975.js",
+    "static/media/Background_login.png": "/detox/static/media/Background_login.9424eca37a08eabbe4fd.png",
+    "static/media/logo.png": "/detox/static/media/logo.46751979e9157c888836.png",
+    "index.html": "/detox/index.html",
+    "main.e4e24144.css.map": "/detox/static/css/main.e4e24144.css.map",
+    "main.55346975.js.map": "/detox/static/js/main.55346975.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4e24144.css",
+    "static/js/main.55346975.js"
+  ]
+}
