@@ -22,7 +22,7 @@ const LogIn = () => {
   const handleSignupChange = (e) => {
     setSignupData({ ...signupData, [e.target.name]: e.target.value });
   };
-
+  
   // Handle login form submission
   const handleLoginSubmit = async (e) => {
     e.preventDefault()
@@ -55,6 +55,7 @@ const LogIn = () => {
 
   // Handle signup form submission
   const handleSignupSubmit = async (e) => {
+    console.log("initiated");
     e.preventDefault();
 
     try {
