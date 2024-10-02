@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import './LogIn.css';
 import { FaUser, FaLock } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
 
 const LogIn = () => {
   const [action, setAction] = useState('');
   const [loginData, setLoginData] = useState({ username: '', password: '' });
   const [signupData, setSignupData] = useState({ username: '', email: '', password: '' });
-
+  const nav=useNavigate();
   // Toggle between login and signup form
   const registerLink = () => setAction('active');
   const logInLink = () => setAction('');
@@ -43,6 +44,7 @@ const LogIn = () => {
         console.log("Login successful:", result);
         // Handle successful login (e.g., redirect to dashboard or store token)
         alert('Login successful')
+        nav("/")
       } else {
         console.error("Login error:", result.message);
       }
@@ -71,6 +73,7 @@ const LogIn = () => {
         console.log("Signup successful:", result);
         // Handle successful signup (e.g., redirect to login or dashboard)
         alert('SignUp successful')
+        setAction("");
       } else {
         console.error("Signup error:", result.message);
       }
