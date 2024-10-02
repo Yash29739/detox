@@ -25,7 +25,7 @@ const LogIn = () => {
 
   // Handle login form submission
   const handleLoginSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
     console.log("Entered the function")
 
     try {
